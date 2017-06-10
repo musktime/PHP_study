@@ -29,3 +29,7 @@ $sql="update user set name='tony',work='check' where(id=2)";
 //$sql="select * from user";
 $rst=$mysqli->query($sql);
 var_dump($rst);
+
+
+//关闭数据库连接
+$mysqli->close();
